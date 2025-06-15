@@ -19,7 +19,7 @@ export default function AppNavbar() {
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about">About Us</Nav.Link>
             <Nav.Link as={NavLink} to="/book">Book</Nav.Link>
-            <Nav.Link as={NavLink} to="/contacts">Contacts</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">Contacts</Nav.Link>
             <Nav.Link as={NavLink} to="/pages">Pages</Nav.Link>
           </Nav>
           <Button variant="warning" as={NavLink} to="/login">Login</Button>
