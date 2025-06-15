@@ -21,11 +21,6 @@ export default function AppNavbar() {
             <Nav.Link as={NavLink} to="/book" style={{ color: '#161B5F' }}>Book</Nav.Link>
             <Nav.Link as={NavLink} to="/contacts" style={{ color: '#161B5F' }}>Contacts</Nav.Link>
             <Nav.Link as={NavLink} to="/pages" style={{ color: '#161B5F' }}>Pages</Nav.Link>
-            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
-            <Nav.Link as={NavLink} to="/about">About Us</Nav.Link>
-            <Nav.Link as={NavLink} to="/book">Book</Nav.Link>
-            <Nav.Link as={NavLink} to="/contact">Contacts</Nav.Link>
-            <Nav.Link as={NavLink} to="/pages">Pages</Nav.Link>
           </Nav>
           <Button variant="warning" as={NavLink} to="/login">Login</Button>
         </Navbar.Collapse>
