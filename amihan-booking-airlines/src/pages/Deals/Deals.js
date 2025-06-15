@@ -1,7 +1,7 @@
 import "./deals.css";
 import image1 from '../../assets/3.png';
 import image2 from '../../assets/4.png';
-import image3 from '../../assets/5.png';
+import image3 from '../../assets/6.png';
 
 import Carousel from 'react-bootstrap/Carousel';
 
