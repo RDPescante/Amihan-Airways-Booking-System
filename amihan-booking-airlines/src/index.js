@@ -15,6 +15,7 @@ root.render(
     <App />
     <Deals />
     <AboutUs />
+    
   
   </>
 )
