@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <div className="home">
       <main className="main">
-        <h1>Carried by the <span className="highlight">wind</span>, guided by Amihan.</h1>
+        <h1 className="main-title">AMIHAN AIRLINES</h1>
+        <h3>Carried by the <span className="highlight">WIND</span>,</h3>
+        <h3>Guided by AMIHAN</h3>
         <div className="booking-form styled-booking-form">
           <div className="input-group">
             <FaMapMarkerAlt className="input-icon" />
