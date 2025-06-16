@@ -1,0 +1,141 @@
+/* === CSS Reset === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* === Carousel Styles === */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh; /* Default for small screens */
+}
+
+.carousel {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.carousel-img {
+  object-fit: contain;
+  width: 90vw;
+  height: 100vh;
+}
+
+/* Limit arrow button width */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  width: 40vw;
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  background-size: 1.5rem 1.5rem;
+  background-position: center;
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .image-container {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .carousel-img {
+    width: 60vw;
+    height: auto;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  .image-container {
+    height: 60vh;
+  }
+
+  .carousel-img {
+    width: 40vw;
+    margin-bottom: 20px;
+    height: auto;
+  }
+}
+
+/* === Promo Box Styling === */
+#FirstPromo,
+#SecondPromo,
+#ThirdPromo {
+  background-color: #113d6f;
+}
+
+#FirstPromo div,
+#SecondPromo div,
+#ThirdPromo div {
+  background-color: rgb(199, 199, 199) !important;
+}
+
+#FirstPromo h4,
+#SecondPromo h4,
+#ThirdPromo h4 {
+  color: #e5d49e;
+  font-weight: bold;
+}
+
+/* === Heading Styles === */
+#DealsText,
+#PromosText {
+  color: #b28d1b;
+  font-weight: bolder;
+}
+
+
+/* Ensure the carousel parent is relative */
+.carousel-wrapper {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Arrows full screen edge on all devices */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: auto;
+  height: 100%;
+  background: none;
+  border: none;
+}
+
+.custom-carousel .carousel-control-prev {
+  left: -30px; /* push left arrow out */
+}
+
+.custom-carousel .carousel-control-next {
+  right: -30px; /* push right arrow out */
+}
+
+/* On small screens, push them further to the edge */
+@media (max-width: 767.98px) {
+  .custom-carousel .carousel-control-prev {
+    left: -10px;
+  }
+
+  .custom-carousel .carousel-control-next {
+    right: -10px;
+  }
+}
