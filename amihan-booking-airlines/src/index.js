@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // Page
-import AboutUs from './pages/AboutUs';
-import Deals from './pages/Deals';
+import AboutUs from './pages/AboutUs/About';
+import Deals from './pages/Deals/Deals';
 
 import './index.css';
 
