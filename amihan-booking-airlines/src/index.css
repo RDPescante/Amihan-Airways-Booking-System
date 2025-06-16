@@ -1,3 +1,170 @@
+
 *{
   font-family: Roboto; 
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-nav .nav-link {
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+  color: #E8B008; /* Amihan Airlines highlight color */
+}
+
+
+.home {
+  background: linear-gradient(135deg, #161B5F, #1E2A78);
+  background-image: url('./images/homepage.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.main h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+
+
+.highlight {
+  color: gold;
+  font-weight: bold;
+}
+
+.booking-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.booking-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+   text-align: center; /* Centers the text */
+
+}
+
+.book-now {
+  background-color: gold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Modern booking form styles for Home.js */
+
+.styled-booking-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #161B5F;
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  margin-top: 2.5rem;
+  width: 90vw;
+  max-width: 850px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  gap: 15px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-right: 2px solid #fff2;
+  padding: 0 24px;
+  height: 56px;
+  color: #fff;
+}
+.input-group:last-child {
+  border-right: none;
+}
+.input-icon {
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.styled-booking-form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  width: 140px;
+  margin-left: 10px;
+}
+.styled-booking-form input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+.styled-book-now {
+  background: #C9A43A;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 14px 40px;
+  height: 56px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.styled-book-now:hover {
+  background: #b08a1e;
+}
+.arrow-icon {
+  margin-left: 0.7rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .styled-booking-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
