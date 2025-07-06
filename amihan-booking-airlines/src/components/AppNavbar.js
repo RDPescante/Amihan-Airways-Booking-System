@@ -5,8 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import logo from '../images/logo.png';
 
-
-export default function AppNavbar() {
+export default function AppNavbar({ onLoginClick }) {
   return (
     <Navbar style={{ backgroundColor: '#F0F1F6' }} expand="lg">
       <Container>
@@ -22,7 +21,7 @@ export default function AppNavbar() {
             <Nav.Link as={NavLink} to="/contact" style={{ color: '#161B5F' }}>Contacts</Nav.Link>
             <Nav.Link as={NavLink} to="/pages" style={{ color: '#161B5F' }}>Pages</Nav.Link>
           </Nav>
-          <Button variant="warning" as={NavLink} to="/login">Login</Button>
+          <Button variant="warning" onClick={onLoginClick}>Login</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
